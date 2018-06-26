@@ -6,3 +6,5 @@ You will have to restart Tomcat if you haven't got jackson deployed in tomcat/li
 * Introducing Jackson-XML dependencies into Tomcat's shared classloader breaks Sakai (at least sakai 11.4),
   so I'm only adding the libraries required for JSON 
  
+
+![Screenshot](./screenshort_swagger.png?raw=true "Screenshot")
