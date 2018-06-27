@@ -7,7 +7,7 @@
 
 	<groupId>de.berlin.fu.imp.sakai</groupId>
 	<artifactId>fu-berlin-direct</artifactId>
-	<version>0.11.4-SNAPSHOT</version>
+	<version>0.12.2-SNAPSHOT</version>
 	<name>fu-berlin-direct - Base</name>
 	<packaging>pom</packaging>
 
@@ -16,24 +16,22 @@
 	<parent>
 		<groupId>org.sakaiproject</groupId>
 		<artifactId>master</artifactId>
-		<version>11.4</version>
+		<version>12.2</version>
 		<relativePath />
 	</parent>
 
 	<properties>
-		
+		<hs.spring.version>${sakai.spring.version}</hs.spring.version>
+
 		<hs.logback.version>1.1.2</hs.logback.version>
-		<hs.slf4j.version>1.7.9</hs.slf4j.version>		
+		<hs.slf4j.version>${sakai.slf4j.version}</hs.slf4j.version>
 		<hs.lombok.version>1.16.10</hs.lombok.version>
-		
-		<!-- 
-		<hs.mockito.version>1.10.19</hs.mockito.version>
-		<hs.hamcrest.version>1.3</hs.hamcrest.version>
-		-->
+
+		<!-- <hs.mockito.version>1.10.19</hs.mockito.version> <hs.hamcrest.version>1.3</hs.hamcrest.version> -->
 		<hs.junit.version>4.12</hs.junit.version>
-	
-	
-		<hs.springfox.version>2.8.0</hs.springfox.version>
+
+
+		<hs.springfox.version>2.9.2</hs.springfox.version>
 		<!-- make sure to use a jackson version compatible with the one used by 
 			the proinf webapps -->
 		<jackson.version>${sakai.jackson.version}</jackson.version>
@@ -44,7 +42,7 @@
 		<dependencies>
 			<!-- project dependencies -->
 
-		
+
 
 			<dependency>
 				<groupId>org.projectlombok</groupId>
@@ -86,20 +84,11 @@
 				<version>${hs.springfox.version}</version>
 			</dependency>
 
-<!-- 
-			<dependency>
-				<groupId>com.fasterxml.jackson.dataformat</groupId>
-				<artifactId>jackson-dataformat-xml</artifactId>
-				<version>${jackson.version}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>com.fasterxml.jackson.module</groupId>
-				<artifactId>jackson-module-jaxb-annotations</artifactId>
-				<version>${jackson.version}</version>
-				<scope>provided</scope>
-			</dependency>
-	 -->		
+			<!-- <dependency> <groupId>com.fasterxml.jackson.dataformat</groupId> 
+				<artifactId>jackson-dataformat-xml</artifactId> <version>${jackson.version}</version> 
+				<scope>provided</scope> </dependency> <dependency> <groupId>com.fasterxml.jackson.module</groupId> 
+				<artifactId>jackson-module-jaxb-annotations</artifactId> <version>${jackson.version}</version> 
+				<scope>provided</scope> </dependency> -->
 
 
 			<dependency>
@@ -113,6 +102,18 @@
 		</dependencies>
 
 	</dependencyManagement>
+
+
+
+
+	<repositories>
+		<repository>
+			<id>jcenter-snapshots</id>
+			<name>jcenter</name>
+			<url>https://jcenter.bintray.com/</url>
+		</repository>
+	</repositories>
+
 
 
 

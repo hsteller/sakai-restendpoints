@@ -7,12 +7,12 @@
 	<parent>
 		<artifactId>fu-berlin-direct</artifactId>
 		<groupId>de.berlin.fu.imp.sakai</groupId>
-		<version>0.11.4-SNAPSHOT</version>
+		<version>0.12.2-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 
-	<name>fu-berlin-direct-shared</name>
+
 	<artifactId>fu-berlin-direct-shared</artifactId>
 
 	<packaging>pom</packaging>
